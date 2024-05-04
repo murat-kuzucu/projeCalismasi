@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
+
+
 <body>
     <div class="xc-page-wrapper">
         <header>
@@ -107,7 +109,7 @@
         <!--main-header end  -->
     </div>
     </header>
-
+    
     <div id="xc-cursor">
         <div class="xc-cursor__circle"></div>
     </div>
@@ -117,71 +119,83 @@
     </div>
     <!-- xc-body overlay -->
     
+    <!-- search  -->
+    <div class="xc-search-popup open">
+        <div class="xc-search-popup__overlay"></div>
         
-<!-- header end  -->
+        <!-- /.search-popup__overlay -->
+        <div class="xc-search-popup__content">
+            <form action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="xc-search-popup-btn">
+                    <span><i class="fa-light fa-magnifying-glass"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
 
 
-
-
-<!-- footer start  -->
-<footer class="xc-footer-one__section pt-100">
+    <!-- Register form -->
+<section class="register-section">
     <div class="container">
-        <div class="xc-footer-one__top pb-60">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div class="xc-footer__widget mb-30">
-                        <div class="xc-footer__widget-about">
-                            <div class="xc-footer__widget-logo xc-disabled-dark">
-                                <a href="index.html">
-                            </div>
-                            <div class="xc-footer__widget-logo xc-enable-dark">
-                                <a href="index.html">
-                                        </a>
-                            </div>
+        <div class="row justify-content-center flex-wrap d-flex align-items-center owl-theme" style="font-family: 'Montserrat', sans-serif;">
+            <div class="col-lg-6">
+                <div class="register-form">
+                    <h2 class="h4 text-center">Register</h2>
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" id="username" name="username" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-                </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm  Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="xc-btn text-center">Register</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="xc-footer-one__copyright theme-bg-2 has-border">
-        <div class="container">
-            <div class="row">
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- footer end  -->
+</section>
 
-<!-- JS here -->
-<script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+            <!-- header end  -->
+                <!-- JS here -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
 
-<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendors/mean-menu/meanmenu.js"></script>
-<script src="assets/vendors/jquery-appear/appear.min.js"></script>
-<script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-<script src="assets/vendors/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="assets/vendors/odometer/odometer.min.js"></script>
-<script src="assets/vendors/animaiton-headline/animation-headline.js"></script>
-<script src="assets/vendors/swiper/swiper-bundle.js"></script>
-<script src="assets/vendors/gsap/gsap.min.js"></script>
-<script src="assets/vendors/gsap/ScrollTrigger.min.js"></script>
-<script src="assets/vendors/gsap/ScrollToPlugin.min.js"></script>
-<script src="assets/vendors/gsap/ScrollSmoother.min.js"></script>
-<script src="assets/vendors/nice-select/nice-select.min.js"></script>
-<script src="assets/vendors/swiper/swiper-bundle.js"></script>
-<script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="assets/vendors/magnific-popup/magnific-popup.min.js"></script>
-<script src="assets/vendors/jquery-wow/wow.js"></script>
-<script src="assets/vendors/jquery-isotope/isotope.js"></script>
-<script src="assets/vendors/tilt/tilt.js"></script>
-<script src="assets/vendors/jquery-imagesloaded/imagesloaded.js"></script>
-<script src="assets/vendors/ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/mean-menu/meanmenu.js"></script>
+    <script src="assets/vendors/jquery-appear/appear.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/animaiton-headline/animation-headline.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/vendors/gsap/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendors/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/vendors/nice-select/nice-select.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/magnific-popup/magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-wow/wow.js"></script>
+    <script src="assets/vendors/jquery-isotope/isotope.js"></script>
+    <script src="assets/vendors/tilt/tilt.js"></script>
+    <script src="assets/vendors/jquery-imagesloaded/imagesloaded.js"></script>
+    <script src="assets/vendors/ajaxchimp/jquery.ajaxchimp.min.js"></script>
 
-<!-- main js -->
-<script src="assets/js/main.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
